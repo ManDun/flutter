@@ -14,9 +14,18 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Welcome to Flutters'),
         ),
-      body: Center(
-        child: RandomWords(),
-      ),
+        body: Center(
+          child: FlatButton(
+            textColor: Colors.white,
+            color: Colors.blueAccent,
+            onPressed: (){
+              AlertDialog(
+                title: Text('Alert'),
+              );
+            },
+            child: Text('Generate'),
+          ),
+        ),
       ),
     );
   }
