@@ -51,8 +51,8 @@ class _StoryPageState extends State<StoryPage> {
                 child: FlatButton(
                   onPressed: () {
                     setState(() {
-                      //Choice 2 made by user.
-                      storybrain.nextStory(2);
+                      //Choice 1 made by user.
+                      storybrain.nextStory(1);
                     });
                   },
                   color: Colors.red,
